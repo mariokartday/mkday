@@ -229,6 +229,12 @@ h2 {
   }
 }
 
+@media (max-width: 950px) {
+   ul {
+    font-size: 0.8em; /* réduit la taille de la police sur mobile */
+  }
+}
+
 .justifie {
     text-align: justify;
 }
