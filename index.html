@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<img src="banane.jpg" class="coin top-left" />
+<img src="banane.jpg" class="coin top-right" />
+<!-- <img src="banane.jpg" class="coin bottom-left" />
+<img src="banane.jpg" class="coin bottom-right" /> -->
+
+
+<body>
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+
+
+
+    <div class="main-content">
+        <!-- Colonne de classement -->
+        <aside class="classement">
+            <h2>Classement 2025</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Nom</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Clément *</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sro ***</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>La Touz</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Courtot</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Carlino</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Aurélien *********</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ludo *</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bao ***</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Scal **</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Vix</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Mathieu</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <h2>Hall of Fame</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Titres</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td><a href="participants.html#aurelien" style="text-decoration: none; color: inherit;">Aurélien</a>
+                    </td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Sro</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Bao</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Scal</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Clément</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Janssen</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Ludo</td>
+                    <td>1</td>
+                </tr>
+            </table>
+
+            <!-- <a href="https://www.compteurdevisite.com" title="compteur site"><img src="https://counter1.optistats.ovh/private/compteurdevisite.php?c=99w27yw21l941bcpxzbq1d96gj11mh8k" border="0" title="compteur site" alt="compteur site"></a> -->
+
+        </aside>
+
+        <!-- Section Actualité -->
+        <section class="actualite">
+            <h2>Actualités</h2>
+            <!-- Article 1 -->
+            <article>
+                <h3>Lancement du site internet !</h3>
+                <p>
+                    Après des années à utiliser des feuilles de papier pour les résultats, puis celles passées à écrire
+                    les débrief sur Facebook, on bascule dans la modernité avec le lancement d'un site internet dédié au
+                    tournoi Mario Kart du Sro Day. <br>
+                    Il a pour vocation de réunir tous les précédents résultats, les débriefs, et d'achiver plus de 20
+                    ans de courses endiablées.
+                </p>
+
+                <p> La structure est la suivante : <br>
+                <ul>
+                    <li>Actualités : comme son nom l'indique, les dernières informations et résultats y seront publiés.
+                    </li>
+                    <li>Historique : l'endroit où retrouver les résultats et les debriefs de toutes les éditions.</li>
+                    <li>Participants : la liste de tous les joueurs et joueuses ayant participé au moins une fois au
+                        tournoi, ainsi qu'un résumé de leurs performances.</li>
+                    <li>MKBet : l'onglet réservé à la compétitions de paris (annexe du tournoi) avec la publications des
+                        côtes ainsi que les résultats.</li>
+                    <li>Réglement : les (R)ègles de la compétitions, ainsi que des informations sur la manières dont les
+                        plannings des tournois sont construits.</li>
+                </ul>
+
+                </p>
+            </article>
+
+            <!-- Article 1 -->
+            <article>
+                <h3>Résultat de l'édition 2025</h3>
+                <div class="image-container">
+                    <img src="resultats/MK25Resultats.png" alt="Image 1" />
+                </div>
+                <!-- <table border="2" cellspacing="0" cellpadding="5"
+                    style="border-collapse: collapse; width: 100%; font-family: Arial, sans-serif;">
+                    <thead>
+                        <tr>
+                            <th rowspan="2" style="text-align: center;"> </th>
+                            <th rowspan="2" style="text-align: center;"> </th>
+                            <th rowspan="2" style="text-align: center;">Points</th>
+                            <th colspan="8" style="text-align: center;">DETAILS</th>
+                        </tr>
+                        <tr>
+                            <th colspan="2"  style="text-align: center;">N64</th>
+                            <th colspan="2"  style="text-align: center;">GC</th>
+                            <th colspan="2"  style="text-align: center;">DS</th>
+                            <th colspan="2" style="text-align: center;">Wii</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td style="text-align: center;">1</td>
+                            <td style="text-align: center;">Clément *</td>
+                            <td style="text-align: center;">27</td>
+                            <td style="text-align: center;color: blue;">5/9</td>
+                            <td style="text-align: center;color: blue;">56%</td>
+                            <td style="text-align: center;color: blue;">11/12</td>
+                            <td style="text-align: center;color: blue;">92%</td>
+                            <td style="text-align: center;color: blue;">5/6</td>
+                            <td style="text-align: center;color: blue;">83%</td>
+                            <td style="text-align: center; color: orange;">6/6</td>
+                            <td style="text-align: center; color: orange;">100%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">2</td>
+                            <td style="text-align: center;">Sro ***</td>
+                            <td style="text-align: center;">25</td>
+                            <td style="text-align: center;">3/6</td>
+                            <td style="text-align: center;">50%</td>
+                            <td style="text-align: center;color: blue;">7/9</td>
+                            <td style="text-align: center;color: blue;">78%</td>
+                            <td style="text-align: center;color: orange;">6/6</td>
+                            <td style="text-align: center;color: orange;">100%</td>
+                            <td style="text-align: center;color: blue;">9/12</td>
+                            <td style="text-align: center;color: blue;">75%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">3</td>
+                            <td style="text-align: center;">La Touz</td>
+                            <td style="text-align: center;">25</td>
+                            <td style="text-align: center;color: orange;">9/9</td>
+                            <td style="text-align: center;color: orange;">100%</td>
+                            <td style="text-align: center;color: orange;">6/6</td>
+                            <td style="text-align: center;color: orange;">100%</td>
+                            <td style="text-align: center;color: blue;">6/9</td>
+                            <td style="text-align: center;color: blue;">66%</td>
+                            <td style="text-align: center; color: red;">4/9</td>
+                            <td style="text-align: center; color: red;">44%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">4</td>
+                            <td style="left">Courtot</td>
+                            <td style="text-align: center;">19</td>
+                            <td style="text-align: center;color: red;">0/6</td>
+                            <td style="text-align: center;color: red;">0%</td>
+                            <td style="text-align: center;color: red;">1/6</td>
+                            <td style="text-align: center;color: red;">17%</td>
+                            <td style="text-align: center;color: blue;">10/12</td>
+                            <td style="text-align: center;color: blue;">83%</td>
+                            <td style="text-align: center;color: blue;">8/9</td>
+                            <td style="text-align: center;color: blue;">89%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">5</td>
+                            <td style="text-align: center;">Carlino</td>
+                            <td style="text-align: center;">19</td>
+                            <td style="text-align: center;color: blue;">9/12</td>
+                            <td style="text-align: center;color: blue;">75%</td>
+                            <td style="text-align: center;color: red;">1/6</td>
+                            <td style="text-align: center;color: red;">17%</td>
+                            <td style="text-align: center;color: blue;">4/6</td>
+                            <td style="text-align: center;color: blue;">66%</td>
+                            <td style="text-align: center;color: blue;">5/9</td>
+                            <td style="text-align: center;color: blue;">56%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">6</td>
+                            <td style="text-align: center;">Aurélien ********</td>
+                            <td style="text-align: center;">19</td>
+                            <td style="text-align: center;color: blue;">5/9</td>
+                            <td style="text-align: center;color: blue;">56%</td>
+                            <td style="text-align: center;color: blue;">8/12</td>
+                            <td style="text-align: center;color: blue;">75%</td>
+                            <td style="text-align: center;">3/6</td>
+                            <td style="text-align: center;">50%</td>
+                            <td style="text-align: center;">3/6</td>
+                            <td style="text-align: center;">50%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">7</td>
+                            <td style="text-align: center;">Ludo *</td>
+                            <td style="text-align: center;">17</td>
+                            <td style="text-align: center;color: blue;">6/9</td>
+                            <td style="text-align: center;color: blue;">67%</td>
+                            <td style="text-align: center;color: red;">3/9</td>
+                            <td style="text-align: center;color: red;">33%</td>
+                            <td style="text-align: center;color: red;">3/9</td>
+                            <td style="text-align: center;color: red;">33%</td>
+                            <td style="text-align: center;color: blue;">5/6</td>
+                            <td style="text-align: center;color: blue;">83%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">8</td>
+                            <td style="text-align: center;">Bao ***</td>
+                            <td style="text-align: center;">14</td>
+                            <td style="text-align: center;color: blue;">7/9</td>
+                            <td style="text-align: center;color: blue;">78%</td>
+                            <td style="text-align: center;">3/6</td>
+                            <td style="text-align: center;">50%</td>
+                            <td style="text-align: center;color: red;">1/6</td>
+                            <td style="text-align: center;color: red;">17%</td>
+                            <td style="text-align: center;color: red;">3/12</td>
+                            <td style="text-align: center;color: red;">25%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">9</td>
+                            <td style="text-align: center;">Scal **</td>
+                            <td style="text-align: center;">14</td>
+                            <td style="text-align: center;color: red;">2/6</td>
+                            <td style="text-align: center;color: red;">33%</td>
+                            <td style="text-align: center;color: blue;">5/9</td>
+                            <td style="text-align: center;color: blue;">56%</td>
+                            <td style="text-align: center;color: red;">2/9</td>
+                            <td style="text-align: center;color: red;">22%</td>
+                            <td style="text-align: center;color: blue;">5/9</td>
+                            <td style="text-align: center;color: blue;">56%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">10</td>
+                            <td style="text-align: center;">Vix</td>
+                            <td style="text-align: center;">10</td>
+                            <td style="text-align: center;color: red;">2/9</td>
+                            <td style="text-align: center;color: red;">22%</td>
+                            <td style="text-align: center;color: red;">1/9</td>
+                            <td style="text-align: center;color: red;">11%</td>
+                            <td style="text-align: center;color: blue;">4/6</td>
+                            <td style="text-align: center;color: blue;">66%</td>
+                            <td style="text-align: center;color: red;">3/9</td>
+                            <td style="text-align: center;color: red;">33%</td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center;">11</td>
+                            <td style="text-align: center;">Mathieu</td>
+                            <td style="text-align: center;">9</td>
+                            <td style="text-align: center;color: red;">0/9</td>
+                            <td style="text-align: center;color: red;">0%</td>
+                            <td style="text-align: center;color: red;">2/6</td>
+                            <td style="text-align: center;color: red;">33%</td>
+                            <td style="text-align: center;color: red;">4/9</td>
+                            <td style="text-align: center;color: red;">44%</td>
+                            <td style="text-align: center;color: red;">3/9</td>
+                            <td style="text-align: center;color: red;">33%</td>
+                        </tr>
+                    </tbody>
+                </table> -->
+
+
+                <p>Voici les résultats (tant attendus !) du traditionnel tournoi Mario Kart organisé cette fois encore
+                    chez l’ami Sro. Nous avons d’ailleurs renoué avec nos anciennes habitudes puisque nous avons été
+                    assez nombreux pour faire un foot le matin (8 + 2 enfants du coin^^), signe des progrès constants de
+                    la médecine. Puis la soirée a donné lieu à une compétition sur les activités multi-jeux (fléchette,
+                    billard japonais, pétanque-oranges et mini-ping-pong) inaugurées l’an dernier. Cette compétition
+                    annexe a vu la victoire de Ludo qui a réalisé un quasi-sans-faute.<br>
+                    Mais revenons au tournoi Mario Kart : au programme, 11 participants répartis sur 4 consoles (N64,
+                    Gamecube, DS, Wii) avec des contraintes assurant que chacun joue à peu près le même nombre de fois
+                    sur chaque console et contre chaque adversaire au cours de l’après-midi.<br>
+                    Et la victoire revient à Clément qui a réalisé un parcours remarquable sur toutes les consoles. Il
+                    s’est quand même infligé une ultime frayeur sur les deux dernières journées alors qu’il voyait le
+                    redoutable polonais grignoter son retard et être à deux doigts de le pousser aux prolongations sur
+                    les routes arc-en-ciel. Mais il a tenu bon et s’est donc offert une deuxième couronne 19 ans ( !!)
+                    après son premier sacre. Inutile de préciser que c’est le plus grand écart d’années entre deux
+                    titres (consécutifs ou non).<br>
+                    Son dauphin n’est autre que l’ami Sro qui confirme son regain de forme en décrochant un 3ème podium
+                    lors des 4 dernières éditions. Ses performances moyennes sur N64 lui auront coûté la victoire. Cela
+                    reste une très belle seconde place pour le Poulidor polonais qui détient le record en la matière
+                    avec 8 médailles d’argent en 20 participations.<br>
+                    Le podium est complété par un autre habitué des honneurs à savoir La Touz. Après un départ diesel,
+                    il a réalisé un quasi-sans-faute dans la dernière ligne droite pour finir à égalité de points avec
+                    Sro (avec notamment 100% des points sur N64 et Gamecube). Les confrontations directes étant faveur
+                    de ce dernier, cela ne sera pas l’année du premier titre pour La Touz qui reste le joueur avec le
+                    plus de participations (15) à n’avoir aucune étoile sur son maillot (l’inverse de son club de foot
+                    de cœur ❤).<br>
+                    Vient ensuite une belle brochette de 3 joueurs à égalité à 19 points et départagés aux
+                    confrontations directes et nombre de premières places.
+                    Au pied du podium donc, nous retrouvons Courtot qui égale ses meilleures performances de 2023 et
+                    2012. Comme à son habitude, il a été brillant sur DS et Wii (18 pts gagnés) et très moyen, pour ne
+                    pas dire autre chose, sur N64 et GC (1 pt de gagné).
+                    A la cinquième position, Carlino a un profil un peu similaire avec une affection prononcée pour la
+                    N64, sur laquelle il a pu jouer 4 fois et récolter 9 pts. Mais cette année il a réussi à aller
+                    chercher des points ailleurs, en particulier sur DS et Wii pour accrocher son meilleur résultat en
+                    carrière !
+                    A la sixième place, c’est moi, qui réussit à relever la tête après la performance calamiteuse de
+                    2024. Des résultats corrects dans l’ensemble malgré des fautes bêtes sur les deux dernières journées
+                    qui me coûtent des points importants. Mais je pense qu’en continuant avec des performances comme
+                    celle-là, la routourne va vite tourner comme disait le philosophe boulonnais.
+                    A la septième place, c’est Ludo qui domine la seconde partie de tableau. Malgré des bons résultats
+                    sur N64 (habituel) et sur Wii (beaucoup moins habituel), il a été plombé par ses résultats sur DS et
+                    GC. Certains attendaient plus de cet ancien vainqueur qui n’a plus été sur le podium depuis 2019.
+                    Bao suit à la huitième position. Quelle désillusion pour le triple vainqueur de la compétition qui
+                    obtient là son plus mauvais rang. Ses performances sur N64 ont été bonnes mais que dire de celles
+                    sur DS, Wii et même Gamecube, console sur laquelle il fût jadis si dominateur.
+                    Arrivé à ce stade, le lecteur doit être en train de s’interroger : « tiens, Scal n’a pas dû
+                    participer cette année, impossible que le tenant du titre soit tombé si bas ». Et bien que nenni, il
+                    était bel et bien là et a échoué à une piteuse 9ème place… Jamais on n’avait vu un tenant du titre
+                    si mal placé, de surcroit l’année succédant à son sacre. D’ailleurs vous remarquerez sur la photo,
+                    que même les projecteurs l’ont fui pour le laisser dans l’ombre… A lui de tout faire pour revenir
+                    dans la lumière dès l’année prochaine !
+                    Dixième et avant-dernier, notre Vix national qui récupère sa place de 2023, l’année où il avait
+                    renoué avec la compétition après 15 ans de trêve. La DS semble être une console qui lui convient
+                    puisqu’il est positif dessus en ayant même remporté une journée dessus.
+                    Pour clore ce classement, puisqu’il faut qu’il y en ait un, c’est Mathieu Lehmann un nouveau venu.
+                    Faisant partie de la famille de Scal, ce dernier lui avait parlé de l’événement lors d’un repas
+                    pendant les fêtes de fin d’année (et vantant sans doute ses mérites personnels par la même
+                    occasion). Intrigué, il est venu la fleur au fusil (ou plutôt au kart) et a appris à ses dépens
+                    qu’on ne s’improvise pas joueur de Mario Kart du jour au lendemain, notamment sur les consoles les
+                    plus anciennes. Mais il a pris ses marques au fur et à mesure de la journée, en en remportant
+                    notamment une sur la fin, En espérant que ce baptême du feu ne l’a pas dégoûté, et qu’il sera
+                    partant pour confirmer, les prochaines années, les promesses aperçues lors des dernières courses.
+                    En parallèle, plusieurs nouveautés ont été introduites dans cette édition.
+                    <br>
+                    A commencer par des peluches récompenses à conserver par respectivement le gagnant et le perdant
+                    jusqu’à l’année prochaine pour les remettre en jeu. De plus, tous les gagnants historiques ont reçu
+                    un porte-clé Mario Kart collector (David Janssen, il y en a un qui t’attend) et à partir de cette
+                    édition chaque nouveau gagnant en obtiendra un (Clément est donc le seul à en avoir 2 !!). Autre
+                    nouveauté, un concours de paris en amont de la compétition dont les côtes sont basées sur les
+                    résultats deux dernières éditions. Et si certaines côtes semblaient réalistes et acceptés de tous
+                    (notamment la victoire de Clément à 2.04), d’autres ont fait plus jaser (la côte podium de Ludo à 29
+                    ou celle de Vix à +infini pour la victoire finale 😃). Et c’est Heddy Arab qui remporte cette
+                    compétition (à défaut d’avoir participé au tournoi en lui-même) en ayant misé sur le bon cheval, en
+                    l’occurrence Sro sur le podium (côte à 5.73).
+                    Bref, merci à tous pour cette journée bien remplie et rendez-vous l’année prochaine 😊
+                </p>
+            </article>
+
+        </section>
+    </div>
+</body>
+
+</html>

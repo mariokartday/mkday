@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<img src="banane.jpg" class="coin top-left" />
+<img src="banane.jpg" class="coin top-right" />
+<!-- <img src="banane.jpg" class="coin bottom-left" />
+<img src="banane.jpg" class="coin bottom-right" /> -->
+
+
+<body>
+    <div id="header"></div>
+
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+
+
+
+    <div class="main-content">
+        <!-- Colonne de classement -->
+        <aside class="classement">
+            <h2>Classement 2025</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Nom</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Clément *</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sro ***</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>La Touz</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Courtot</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Carlino</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Aurélien *********</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ludo *</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bao ***</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Scal **</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Vix</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Mathieu</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <h2>Hall of Fame</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Titres</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Aurélien</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Sro</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Bao</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Scal</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Clément</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Janssen</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Ludo</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </aside>
+
+        <h3>En chantier !</h3>
+
+        <br>
+      
+        
+        <div class="image-container-chantier">
+            <img src="chantier.png" alt="Image 1" />
+        </div>
+    

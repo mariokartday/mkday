@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'accueil</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<img src="banane.jpg" class="coin top-left" />
+<img src="banane.jpg" class="coin top-right" />
+<!-- <img src="banane.jpg" class="coin bottom-left" /> -->
+<!-- <img src="banane.jpg" class="coin bottom-right" /> -->
+
+
+<body>
+
+    <div id="header"></div>
+    <script>
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('header').innerHTML = data;
+            });
+    </script>
+
+
+
+    <div class="main-content">
+        <!-- Colonne de classement -->
+        <aside class="classement">
+            <h2>Classement 2025</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <thead>
+                    <tr>
+                        <th>Rang</th>
+                        <th>Nom</th>
+                        <th>Points</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Clément *</td>
+                        <td>27</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sro ***</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>La Touz</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Courtot</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Carlino</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Aurélien *********</td>
+                        <td>19</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>Ludo *</td>
+                        <td>17</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Bao ***</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>Scal **</td>
+                        <td>14</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>Vix</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>Mathieu</td>
+                        <td>9</td>
+                    </tr>
+                </tbody>
+            </table>
+            <br>
+            <br>
+            <br>
+            <h2>Hall of Fame</h2>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <th>#</th>
+                    <th>Nom</th>
+                    <th>Titres</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Aurélien</td>
+                    <td>9</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Sro</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Bao</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Scal</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Clément</td>
+                    <td>2</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Janssen</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Ludo</td>
+                    <td>1</td>
+                </tr>
+            </table>
+        </aside>
+
+        <!-- Section Participants -->
+        <section class="actualite">
+            <h2>Participants</h2>
+
+            <p>La liste de toutes les personnes ayant au moins une fois participé au tournoi Mario Kart. La liste est
+                triée par nombre décroissant d'apparitions. Quelques infos en vrac :</p>
+
+            <p>Nombre total d'éditions : 21 (2003-2025, en retirant les années Covid 2020-2021)<br>
+                Nombre total de participants : 34<br>
+                Plus grand nombre de participants sur une édition : 13 (2023) <br>
+                Plus grand nombre d'éditions entre deux participations pour un joueur : 14 (Weibel)<br>
+                Plus grand nombre d'années entre deux victoires pour un joueur : 19 ans (Clément)</p>
+            <br>
+            <!-- Participant 1 -->
+            <div class="participant" id=aurelien>
+                <div class="numero">1</div>
+                <img src="photoID/aurelien.png" alt="Photo de Participant 1" class="photo" />
+                <div class="infos">
+                    <h3>Aurélien</h3>
+                    <p>Nombre de participations : 21 (2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+                        2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025)</p>
+                    <p>Titres : 9 (2003, 2004, 2005, 2012, 2013, 2014, 2016, 2017, 2018)</p>
+                    <p>Meilleur Rang : 1 (2003, 2004, 2005, 2012, 2013, 2014, 2016, 2017, 2018)</p>
+                    <p>Pire Rang : 8 (2024)</p>
+                    <p>Rang Moyen : 2,60 / 9.24 </p>
+                </div>
+            </div>
+
+            <!-- Participant 2 -->
+            <div class="participant" id="sro">
+                <div class="numero">2</div>
+                <img src="photoID/sro.png" alt="Photo de Participant 2" class="photo" />
+                <div class="infos">
+                    <h3>Sro</h3>
+                    <p>Nombre de participations : 20 (2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+                        2014, 2015, 2016, 2017, 2018, 2022, 2023, 2024, 2025)</p>
+                    <p>Titres : 3 (2009, 2010, 2011)</p>
+                    <p>Meilleur Rang : 1 (2009, 2010, 2011)</p>
+                    <p>Pire Rang : 8 (2023)</p>
+                    <p>Rang Moyen : 3.20 / 9.25 </p>
+                </div>
+            </div>
+
+
+            <!-- Participant 3 -->
+            <div class="participant" id="scal">
+                <div class="numero">3</div>
+                <img src="photoID/scal.png" alt="Photo de Participant 3" class="photo" />
+                <div class="infos">
+                    <h3>Scal</h3>
+                    <p>Nombre de participations : 16 (2007, 2008, 2009, 2010, 2011, 2012,
+                        2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025)</p>
+                    <p>Titres : 2 (2019, 2024)</p>
+                    <p>Meilleur Rang : 1 (2019, 2024)</p>
+                    <p>Pire Rang : 10 (2012)</p>
+                    <p>Rang Moyen : 5.43 / 9.63 </p>
+                </div>
+            </div>
+
+            <!-- Participant 4 -->
+            <div class="participant" id="bao">
+                <div class="numero">4</div>
+                <img src="photoID/bao.png" alt="Photo de Participant 4" class="photo" />
+                <div class="infos">
+                    <h3>Bao</h3>
+                    <p>Nombre de participations : 15 (2008, 2009, 2011, 2012, 2013,
+                        2014, 2015, 2016, 2017, 2018, 2019, 2022, 2023, 2024, 2025)</p>
+                    <p>Titres : 3 (2008, 2022, 2023)</p>
+                    <p>Meilleur Rang : 1 (2008, 2022, 2023)</p>
+                    <p>Pire Rang : 8 (2025)</p>
+                    <p>Rang Moyen : 3.53 / 9.67 </p>
+                </div>
+            </div>
+
+            <!-- Participant 5 -->
+            <div class="participant" id="touz">
+                <div class="numero">5</div>
+                <img src="photoID/touz.png" alt="Photo de Participant 5" class="photo" />
+                <div class="infos">
+                    <h3>La Touz</h3>
+                    <p>Nombre de participations : 15 (2008, 2009, 2010, 2011, 2012, 2013,
+                        2014, 2015, 2016, 2018, 2019, 2022, 2023, 2024, 2025)</p>
+                    <p>Titres : 0 </p>
+                    <p>Meilleur Rang : 2 (2013, 2015, 2016)</p>
+                    <p>Pire Rang : 9 (2012)</p>
+                    <p>Rang Moyen : 4.08 / 9.67 </p>
+                </div>
+            </div>
+
+            <!-- Participant 6 -->
+            <div class="participant" id="courtot">
+                <div class="numero">6</div>
+                <img src="photoID/courtot.png" alt="Photo de Participant 6" class="photo" />
+                <div class="infos">
+                    <h3>Courtot</h3>
+                    <p>Nombre de participations : 14 (2009, 2010, 2011, 2012, 2013,
+                        2014, 2015, 2017, 2018, 2019, 2022, 2023, 2024, 2025)</p>
+                    <p>Titres : 0 </p>
+                    <p>Meilleur Rang : 4 (2012, 2023, 2025)</p>
+                    <p>Pire Rang : 10 (2010)</p>
+                    <p>Rang Moyen : 6.77 / 10.07 </p>
+                </div>
+            </div>
+
+            <!-- Participant 7 -->
+            <div class="participant" id="carlino">
+                <div class="numero">7</div>
+                <img src="photoID/carlino.png" alt="Photo de Participant 7" class="photo" />
+                <div class="infos">
+                    <h3>Carlino</h3>
+                    <p>Nombre de participations : 13 (2006, 2007, 2008, 2009, 2010, 2012,
+                         2015, 2017, 2018, 2019, 2022, 2023, 2025)</p>
+                    <p>Titres : 0 </p>
+                    <p>Meilleur Rang : 5 (2025)</p>
+                    <p>Pire Rang : 9 (2015, 2023)</p>
+                    <p>Rang Moyen : 7.45 / 9.69 </p>
+                </div>
+            </div>
+
+        </section>
+    </div>
+</body>
+
+</html>

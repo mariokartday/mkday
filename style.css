@@ -1,0 +1,186 @@
+/* Style général */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFD700;
+    /* Doré */
+}
+
+/* Bandeau de navigation */
+header {
+    background-color: #DAA520;
+    /* Doré foncé */
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.navbar li {
+    margin: 0 15px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+/* Contenu principal avec colonne à gauche */
+.main-content {
+    display: flex;
+    padding: 25px;
+}
+
+/* Colonne de classement */
+.classement {
+    width: 18%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.classement h2 {
+    margin-top: 0;
+}
+
+.classement ul {
+    list-style: none;
+    padding: 0;
+}
+
+.classement li {
+    margin-bottom: 10px;
+}
+
+/* Section Actualité */
+.actualite {
+    flex: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 15px;
+    border-radius: 8px;
+}
+
+article {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+/* Images */
+.image-container {
+    max-width: 3000px;
+    margin: 10px 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-container-chantier {
+    max-width: 300px;
+    margin: 100px 0;
+}
+
+.image-container-chantier img {
+    width: 80%;
+    height: auto;
+}
+
+.coin {
+    position: absolute;
+    width: 90px;
+    /* ajustez la taille */
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.bottom-left {
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.participant {
+    position: relative; /* pour positionner le numéro en absolu à l'intérieur */
+    display: flex;
+    align-items: center;
+    margin-bottom: 10x;
+    padding-bottom: 10px;
+    padding: 10px;
+    /*border-bottom: 1px solid #ccc; /* ligne de séparation */
+    border-top: 1px solid #ccc;
+}
+
+/* Pour augmenter l'espace au-dessus de la ligne, on peut ajouter une marge en haut aussi */
+.participant+.participant {
+    margin-top: 20px;
+    /* espace entre deux participants */
+    margin-bottom: 20px;
+}
+
+.photo {
+    width: 100px;
+    /* ou la taille souhaitée */
+    height: auto;
+    margin-right: 15px;
+    border-radius: 50%;
+    /* si vous voulez une photo ronde */
+}
+
+/* Style pour le numéro */
+.numero {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #fff; /* ou transparent si vous préférez */
+  padding: 2px 8px;
+  font-weight: bold;
+  border-radius: 4px;
+  box-shadow: 0 0 2px rgba(0,0,0,0.2);
+}
+
+.infos h3 {
+    margin: 0;
+    font-size: 1.2em;
+}
+
+.infos p {
+    margin: 5px 0 0 0;
+}
