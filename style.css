@@ -107,6 +107,45 @@ article {
     border-radius: 8px;
 }
 
+.article-collapsed {
+  max-height: calc(10 * 1.5em); /* 10 lignes si line-height est 1.5em */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.button-container {
+  text-align: center; /* centre le bouton horizontalement */
+  margin-top: 10px; /* un peu d’espace au-dessus */
+}
+
+/* Style général du bouton */
+.toggleButton {
+  background-color: #e9b50b; /* Vert moderne */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px; /* Arrondi pour un look moderne */
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+/* Effet au survol */
+.toggleButton:hover {
+  background-color:#4CAF50; /* Couleur légèrement plus foncée */
+  transform: scale(1.05); /* Légère croissance */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+/* Optionnel : bouton actif ou cliqué */
+.toggleButton:active {
+  transform: scale(0.98);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+
+
 h2 {
     margin-top: 0;
 }
